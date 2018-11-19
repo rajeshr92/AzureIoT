@@ -25,7 +25,7 @@ This project uses Visual Studio C# code to process the click event from the butt
 
 Several documentaion for the IoT teXXmo button is available, but following are some of the documentations used: 
 
-1. Setting up the teXXmo Button (NOTE: JSON is not needed for this project) - https://catalog.azureiotsolutions.com/details?title=teXXmo-IoT-Button&source=home-page
+1. Setup the teXXmo Button (NOTE: JSON is not needed for this project) - https://catalog.azureiotsolutions.com/details?title=teXXmo-IoT-Button&source=home-page
 2. Create an IoT Hub endpoint - https://azure.microsoft.com/en-us/resources/samples/azure-serverless-iot-button/
 3. Installing Visual Studio with Cloud workload - https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs#check-your-tools-version
 4. Create the Azure Function - https://azure.microsoft.com/en-us/resources/samples/azure-serverless-iot-button/
