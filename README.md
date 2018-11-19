@@ -1,6 +1,8 @@
-# Project Title
+# 1-click action with teXXmo IoT Button
 
-One Paragraph of project description goes here
+This is a fun project using the teXXmo IoT button given out at //build/ 2018 at the Azure IoT developer session. Using this button, several components of the Azure IoT developer platform were explored. In this particular project, the button was used to initiate an email message to a specific reciepeint
+using http signals to detect click events and trigger the logic hosted in Azure.  
+
 
 ## Getting Started
 
