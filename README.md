@@ -1,89 +1,34 @@
 # 1-click action with teXXmo IoT Button
 
 This is a fun project using the teXXmo IoT button given out at //build/ 2018 at the Azure IoT developer session. Using this button, several components of the Azure IoT developer platform were explored. In this particular project, the button was used to initiate an email message to a specific reciepeint
-using http signals to detect click events and trigger the logic hosted in Azure.  
+using http signals to detect click events and trigger the logic hosted in Azure. In addition, the IoT Hub is connected to Time Series Inights to have a graphical representation of the click-events as a function of time.
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+IoT is the notion of connecting things by taking compute and connectivity, everywhere. These comprise of things that are connected and then the events from those things that are recorded somewhere, which is the cloud. For this project, the teXXmo 
+button is the "thing" that is connected while the act of clicking the button is the event that is recorded in the cloud. The action from the click is the logic that is hosted in the cloud and a set of actions can help in gaining insights. 
+
+While this is the uber picture that gets split into events, actions, and insights, below are some details on setup.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project uses Visual Studio C# code to process the click event from the button and then uses that event to invoke the logic to output an action. Following are the prerequisite setup required:
 
-```
-Give examples
-```
+1. Install the latest version of Visual Studio with Cloud workload 
+2. Sign-up for Azure subscription 
+3. Setup IoT Hub and document the resource name, connection strings etc. in a OneNote page
+4. Point the teXXmo IoT Button to the IoT Hub endpoint created in prerequisite #3 
+5. Plan ahead on what the action is and then setup the logic using the logic app in Azure Portal
 
-### Installing
+## Documentation Referred
 
-A step by step series of examples that tell you how to get a development env running
+Several documentaion for the IoT teXXmo button is available, but following are some of the documentations used: 
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+1. Setting up the teXXmo Button
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* The Azure IoT Dev team; Jill, Prassana, and Brian 
+* Inspiration from Sam, Director of Azure IoT
+* Personal experience from previous employer and research
